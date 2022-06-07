@@ -12,7 +12,9 @@ import backgroundImage from './background.png';
 function App() {
   return (
     <div className="App" style={{ backgroundImage: `url(${backgroundImage})` }}>
-      
+      <Header />
+      <Main animals={animals} />
+      <Footer />
     </div>
   );
 }
