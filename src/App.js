@@ -1,20 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
 
-import Header from './Header/Header.js';
-import Main from './Main/Main.js';
-import Footer from './Footer/Footer.js';
+import Header from './Header.js';
+import Main from './Main.js';
+import Footer from './Footer.js';
 
-import { animals } from './Animal/data.js';
+import { animals } from './data.js';
 
-import backgroundImage from './background.png';
 
 function App() {
   return (
-    <div className="App" style={{ backgroundImage: `url(${backgroundImage})` }}>
-      <Header />
+    <div className="App" >
+      <Header name='Alchemy Code Farm'/>
       <Main animals={animals} />
-      <Footer />
+      <Footer email='thomasbrien94@gmail.com'/>
     </div>
   );
 }
